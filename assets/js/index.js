@@ -2,8 +2,6 @@ import {creaMazo, obtieneCarta, sumaPuntos} from './mazo.js';
 
 (function(){
 
-    let puntosJugadores = [];
-
     const btnNuevo = document.querySelector('#btn-Nuevo'),
           btnPedir = document.querySelector('#btn-Pedir'),
           btnFin   = document.querySelector('#btn-Fin'),
