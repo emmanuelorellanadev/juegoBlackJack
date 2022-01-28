@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack!!!</title>
+    <link rel="stylesheet" href="./assets/css/estilosJuego.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <nav class="menu">
+            <!-- <ul>
+                <li>Juego Nuevo</li>
+                <li>Pedir Carta</li>
+                <li>Terminar Juego</li>
+            </ul> -->
+            <button class="btn" id="btn-Nuevo" >Juego Nuevo</button>
+            <button class="btn" id="btn-Pedir" disabled>Pedir Carta</button>
+            <button class="btn" id="btn-Fin" disabled>Fin del Juego</button>
+        </nav>
+        <section class="mesa">
+            <div id="jugador1">
+                <h2>jugador1 <small>0</small></h2>
+                <div id="cartasJugador">
+                    <!-- <img src="./assets/cartas/10C.png" alt="">
+                    <img src="./assets/cartas/10C.png" alt=""> -->
+                </div>
+            </div>
+            <div id="jugadorPC">
+                <h2>PC <small>0</small></h2>
+                <div id="cartasPC">
+                    <img src="./assets/cartas/10H.png" alt="">
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./assets/js/index.js" type="module"></script>
+    <script src="./assets/js/underscore-min.js" ></script>
+</body>
+
+</html>

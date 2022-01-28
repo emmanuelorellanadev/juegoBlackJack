@@ -1,0 +1,80 @@
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    border: solid 1px #eee;
+    background: #ddd;
+}
+
+.grid-container{
+    border: solid 1px #eee;
+    min-height: 100%;
+}
+
+.menu{
+    border: solid 1px #eee;
+}
+
+/* .menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    border: solid 1px #eee;
+    border-radius: 4px;
+    list-style: none;
+    padding: 10px 50px;
+    font-size: 20px;
+}
+
+li:hover{
+    color: white;
+    background: green;
+    transition: 0.4s;
+    cursor: inherit;
+} */
+
+.btn{
+    padding: 20px;
+    font-size: 16px;
+}
+.btn:hover{
+    background: green;
+    color: white;
+    transition: 0.4s;
+}
+
+.mesa{
+    position:absolute;
+    min-height: 100%;
+    width: 100%;
+    background: green;
+    padding: 20px;
+    
+}
+
+#jugador1{
+    min-height: 325px;
+}
+
+h2 {
+    color: white;
+}
+
+#cartasJugador {
+    padding-left: 80px;
+}
+#cartasPC{
+    padding-left: 80px;
+}
+
+img {
+    width: 150px;
+    margin-left: -80px;
+}
