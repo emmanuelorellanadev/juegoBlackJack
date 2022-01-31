@@ -38,9 +38,45 @@ const sumaPuntos = (jugador) => {
   
     return puntosJugadores;
 }
+//seguir a partir de esta parte
+const compara = (jugador) => {
+
+        if(jugador == 0){
+            //compara al jugador1
+            if (puntosJugadores[0] == 21){
+                alert('Felicidades!!! Ganaste !!!');
+            }else if(puntosJugadores[0] > 21){
+                alert('Perdiste :(') ;
+                limpiaPuntos();
+            }                
+
+        }else if(jugador == 1){
+            //compara los resultados del jugadorPC
+            if(puntosJugadores[1] == 21){
+                alert(`La PC Gana`);
+                return true;
+            }else if(puntosJugadores[1] > 21){
+                alert(`Ganaste !!! La pc se ha pasado`);
+                return true;
+            }else if(puntosJugadores[1] > puntosJugadores[0]){
+                alert(`Perdiste, la computadora te ha ganado`);
+                return true;
+            }
+        }
+
+}
+
+const limpiaPuntos = () => {
+    puntosJugadores[0] = 0;
+    puntosJugadores[1] = 0;
+
+}
+
 
 export  {
     creaMazo, 
     obtieneCarta,
-    sumaPuntos
+    sumaPuntos,
+    compara,
+    limpiaPuntos
 }
